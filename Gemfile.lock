@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    itamae-recipe-loader (0.0.1)
+    itamae-recipe-loader (0.0.2)
       itamae
 
 GEM
