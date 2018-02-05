@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    itamae-recipe-loader (0.0.2)
+    itamae-recipe-loader (0.1.0)
       itamae
 
 GEM
@@ -38,4 +38,4 @@ DEPENDENCIES
   rake (~> 10.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
