@@ -5,10 +5,10 @@ module Itamae
     attr_reader :backend
     attr_reader :runner
 
-    def initialize(recipe_files, options)
+    def initialize(recipe_files, backend_type, options)
       self.class.logger_init(options)
       @targets = []
-      backend = Itamae::Backend.create(:ssh, options)
+      backend = Itamae::Backend.create(backend_type, options)
       @runner = Itamae::Runner.new(backend, options)
       @runner.load_recipes(recipe_files)
     end
